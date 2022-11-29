@@ -1,0 +1,13 @@
+timeblock_access.admin_config:
+  title: 'Time Block Configration'
+  route_name: timeblock_access.admin_config
+  parent: system.admin_config
+  description: 'Time Block Configration.'
+  weight: -1
+
+timeblock_access.admin_config_form:
+  title: 'Time Block Settings'
+  route_name: timeblock_access.admin_config_form
+  description: 'Time Block Settings.'
+  parent: timeblock_access.admin_config
+  weight: 1
