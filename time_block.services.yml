@@ -1,0 +1,4 @@
+services:
+  time_block.current_time_services:
+    class: Drupal\time_block\Services\CurrentTimeService
+    arguments: ['@config.factory','@date.formatter']
