@@ -37,7 +37,7 @@ class ShowCurrentTime extends BlockBase implements ContainerFactoryPluginInterfa
    * {@inheritdoc}
    */  
   public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
-	  return new static(
+    return new static(
       $configuration,
       $plugin_id,
       $plugin_definition,
@@ -56,7 +56,7 @@ class ShowCurrentTime extends BlockBase implements ContainerFactoryPluginInterfa
    * {@inheritdoc}
    */
   public function build() {
-	  $current_time = $this->current_time->showCurrentTime();
+    $current_time = $this->current_time->showCurrentTime();
     $renderable = [
       '#theme' => 'current_time_template',
       '#current_time' => $current_time,
