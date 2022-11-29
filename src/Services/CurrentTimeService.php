@@ -35,7 +35,7 @@ class CurrentTimeService {
     $time_config = $this->config_factory->getEditable('time_block.settings');
     return [
       'time' => $this->date_formatter->format(REQUEST_TIME, 'custom', 'h:i A', $time_config->get('timezone')),
-      'date' => $this->date_formatter->format(REQUEST_TIME, 'custom', 'l, d F Y', $time_config->get('timezone')),
+      'date' => $this->date_formatter->format(REQUEST_TIME, 'custom', 'l, dS F Y', $time_config->get('timezone')),
       'place' => t('Times in') . ' ' . $time_config->get('city') . ', ' . $time_config->get('country')
     ];
   }
