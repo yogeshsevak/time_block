@@ -37,7 +37,7 @@ class TimeConfigrationForm extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-	  $config = $this->config(static::SETTINGS);
+    $config = $this->config(static::SETTINGS);
     $form['country'] = [
       '#type' => 'textfield',      
       '#attributes' => [
